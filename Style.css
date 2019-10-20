@@ -6,48 +6,6 @@ body {
   background-size:cover; 
         
 }
-#main-header{
-	
-	color: 0 0 0 255;
-  position: relative;
-  
-}
-
-#main-header  {
-text-decoration: none;
-   display: inline;
-}
-
-#nav-bar{
-display: inline;
-	color:#fff;
-
-}
-
-#nav-bar ul{
-	padding:0 0 0 250px;
-	padding-right: 120px;
-	list-style:none;
-  margin-right: 120px;
-  display: inline;
-	
-
-
-}
-#nav-bar li{
-	display:inline;
-	margin: 0 0 0 10px;
-
-}
-
-#nav-bar a{
-	color:#fff;
-	text-decoration: none;
-	font-size:18px;
-	padding-right:15px;
-
-}
-
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -140,4 +98,3 @@ display: inline;
 .container .info span .fa {
   color: #EF3B3A;
 }
-
