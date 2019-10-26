@@ -12,8 +12,7 @@ include_once('connect.php');
 <div class="login-page">
   <div class="form">
   <h1 class="login">LOGIN</h1>
-    
-    <form class="login-form" method="post">
+   <form action="form_action_files/login.php" class="login-form" method="post">
     
       <input type="text" name="username" placeholder ="username"/>
       <input type ="password"  name ="password" placeholder ="password"/>
@@ -22,6 +21,7 @@ include_once('connect.php');
       <p class="message">Not registered? <a href="Registration.php">Create an account</a></p>
     
     </form>
+ 
   </div>
 </div>
 
