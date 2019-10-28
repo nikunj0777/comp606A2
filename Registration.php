@@ -3,6 +3,7 @@
    <link rel="stylesheet" type="text/css" href="Style.css">
   
 <title>Registration</title>
+	</head>
 <body>
 <div class="login-page">
   <div class="form">
@@ -29,5 +30,5 @@
 </div>
 
 </body>
-</head>
+
 </html>
