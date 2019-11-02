@@ -1,20 +1,16 @@
 <?php
-include_once "../autoload.php";
-
-
-
-
+include_once "../db/autoload.php";
 $username = $_POST['username'];
-$password =  md5($_POST['password']);  
-// var_dump($username);
+$password = md5($_POST['password']);  
 
+$user_type = $_SESSION['user_type'];
+$id = $_SESSION['id'];
+$user_name = $_SESSION['username'];
+$loginUser = User::login($mysqli, $username,$password);
 
-$user = new User;
-$user->login($username, $password);
-
-
-$type = $_SESSION['user_type'];
-$user_id = $_SESSION['user_id'];
-$username = $_SESSION['username'];
-
-header("Location: ../welcome.php?");
+if(is_null($loginUser)) {
+    header("Location: ../Login.php?error");
+} else {
+    echo "<h2>Login successfully</h2>";
+    header("Location: ../welcome.php?");
+}
