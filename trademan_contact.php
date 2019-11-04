@@ -24,5 +24,3 @@ if($trademan_id != 0)
     echo '<h4 class="text-dark"><a href="customer_detail.php">Go back</a> </h6>';
     echo '</div>';
 } 
-
-
