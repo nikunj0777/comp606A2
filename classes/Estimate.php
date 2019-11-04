@@ -159,11 +159,7 @@ class Estimate
             $sql1 = "UPDATE jobs SET `job_status`= 'No', `trademan_id`= 0 WHERE `id`= $job_id";
             $result1 = $mysqli->query($sql1) or die($mysqli->error);
            
-        
-        }
-
- 
-
+                }
     }
 
     public static function customer_view_estimate($mysqli, $job_id)
@@ -212,22 +208,14 @@ class Estimate
                 </tr>
             </div>
                 
-
             <?php } ?>
         </tbody>
         </table>
         <?php
-
-            
-
-    }
-
-
-
-
+   }
 
     public static function customer_confrim($mysqli, $job_id, $trademan_id)
-    {
+     {
         $sql = "UPDATE estimate SET `confirm`= 'Confirmed' WHERE `job_id`= $job_id AND `trademan_id` = $trademan_id";
         $result = $mysqli->query($sql) or die($mysqli->error);
         return $result;
@@ -236,5 +224,4 @@ class Estimate
         $result1 = $mysqli->query($sql1) or die($mysqli->error);
         return $result1;
     }
-
 }
