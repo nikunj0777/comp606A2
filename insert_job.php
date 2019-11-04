@@ -17,7 +17,7 @@ session_start();
      .container{
          background:#fff;
          margin-top:20px;
-         border:1px solid grey;
+         border:3px solid grey;
      }
       </style>
 
@@ -28,14 +28,14 @@ session_start();
 <nav class="navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">SafeTrade</a>
+					<a class="navbar-brand" href="index.html">SafeTrade</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="Login.php"><span class="glyphicon glyphicon-user"></span> login</a></li>
-					<li><a href="Registration.php"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+					<li><a href="logout.php"><span class="glyphicon glyphicon-user"></span> logout</a></li>
+					
 				</ul>
 			</div>
 		</nav>    
@@ -100,9 +100,7 @@ session_start();
           <option>$40</option>
      </select>
 
-
-      
-     
+ 
     </div>
     <div class="form-group">
     <label for="Job Duration">Job Duration</label><br>
@@ -119,6 +117,3 @@ session_start();
 </body>
 </html>
 
-</body>
-</head>
-</html>
