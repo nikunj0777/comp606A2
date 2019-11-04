@@ -20,5 +20,4 @@ if ($mysqli == false){
 $mysqli->autocommit(true);
 
 error_reporting(E_ALL);
-
 ?>
