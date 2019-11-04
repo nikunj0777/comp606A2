@@ -1,10 +1,9 @@
 <?php 
 
 /*
-    This is User class
+   User class
 
 */
-
 
 class User 
 { 
@@ -146,7 +145,7 @@ class User
     public static function view_trademan_contact($mysqli,$trademan_id) 
     {
 
-        $sql = "SELECT * FROM user WHERE (uid = '$trademan_id')";
+        $sql = "SELECT * FROM users WHERE (id = '$trademan_id')";
         $result = $mysqli->query($sql) or die($mysqli->error);
         $trademan_result = $result->fetch_array(MYSQLI_ASSOC);
         $count_row = $result->num_rows;
@@ -155,8 +154,10 @@ class User
         <table class = "table">
         <thead class = "success">
         <tr>
-        <th>Name</th>
-        <th>Mobile</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Username</th>
+        <th>Contact</th>
         <th>Email</th>
 
         </tr>
@@ -169,7 +170,9 @@ class User
             
             <div class="container-fluid">
                 <tr>
-                <td><?= $trademan_result['name']; ?> </td>
+                <td><?= $trademan_result['first_name']; ?> </td>
+                <td><?= $trademan_result['last_name']; ?> </td>
+                <td><?= $trademan_result['username']; ?> </td>
                 <td><?= $trademan_result['contact']; ?> </td>
                 <td><?= $trademan_result['email']; ?> </td>
                 
