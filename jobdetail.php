@@ -111,6 +111,3 @@
 </body>
 </html>
 
-</body>
-</head>
-</html>
