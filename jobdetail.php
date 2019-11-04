@@ -94,8 +94,6 @@
           <option>$40</option>
      </select>
 
-
-      
      
     </div>
     <div class="form-group">
